@@ -1,0 +1,7 @@
+# Scripts que precisam estar no agendador de tarefas (Ajuste o usuário e os caminhos de acordo com o seu ambiente):
+
+* * * * * www-data /usr/bin/php /var/www/ocomon/api/ocomon_api/service/sendEmail.php
+* * * * * www-data /usr/bin/php /var/www/ocomon/ocomon/service/update_auto_approval.php
+* * * * * www-data /usr/bin/php /var/www/ocomon/ocomon/service/update_auto_close_due_inactivity.php
+* * * * * www-data /usr/bin/php /var/www/ocomon/ocomon/open_tickets_by_email/service/getMailAndOpenTicket.php
+* * * * * www-data /usr/bin/php /var/www/ocomon/ocomon/open_tickets_by_email/service/getMailAndOpenTicketAzure.php

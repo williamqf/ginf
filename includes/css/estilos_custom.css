@@ -1,0 +1,446 @@
+/* Estilo de cores personalizadas para o topo e barra principal */
+
+/* Importar do arquivo ocomon_colors.css */
+@import url(./ocomon_colors.css);
+
+:root {
+  --topo-background: var(--ocomon-1);
+  --topo-text: white;
+  --barra-background: var(--ocomon-2);
+  --barra-text-color: white;
+  --barra-text-hover-color: var(--ocomon-3-lightest);
+  --barra-text-hover-background: var(--ocomon-2);
+  --barra-border-top:  var(--ocomon-1-lighter);
+  --barra-border-bottom:  var(--ocomon-1-lighter);
+  --barra-border-right: white;
+  --barra-border-left: white;
+
+  --menu-lateral-bg: var(--barra-background) !important;
+  /* --menu-lateral-color: var(--barra-text-color) !important; */
+
+}
+
+
+.cursor-no-event {
+  cursor: default !important;
+}
+
+/* Logomarca na tela de login */
+.login-mainlogo {
+  background: url('../logos/MAIN_LOGO.png') no-repeat center left;
+  background-size: contain;
+  display: block;
+  height: 50px;
+}
+
+/* Logomarca na barra principal do sistema */
+.header-mainlogo {
+  background: url('../logos/MAIN_LOGO.png') no-repeat top left;
+  background-size: contain;
+  display: block;
+  width: 280px;
+  min-height: 46.3px;
+  max-height: 46.3px;
+}
+
+
+/* Logomarca nas impressões para atendimento */
+.print-mainlogo {
+  background: url('../logos/MAIN_LOGO.png') no-repeat center right;
+  background-size: contain;
+  display: block;
+  width: 100px;
+  min-height: 46.3px;
+  max-height: 46.3px;
+}
+
+
+/* Logomarca dos relatórios - É necessário considerar que o fundo do relatório será branco */
+.report-mainlogo {
+  /* Importante: precisa estar no diretório includes/logos */
+  background: url('../logos/MAIN_LOGO.png') no-repeat top left;
+  background-size: contain;
+  display: block;
+  width: 150px;
+}
+
+/* Imagem de fundo na tela de login */
+.login-screen {
+  background-image: url('../imgs/login-background.jpg') !important;
+  background-size: cover !important;
+}
+
+
+/**
+Cabeçalho e barra superior de opções
+*/
+div.topo-color, span.topo-color {
+  background-color: var(--topo-background) !important;
+  color: var(--topo-text) !important;
+}
+
+a.topo-color {
+  color: var(--topo-text) !important;
+}
+
+div.barra {
+  color: var(--barra-text-color) !important;
+  background-color: var(--barra-background) !important;
+  border-right-color: var(--barra-border-right) !important;
+  border-left-color: var(--barra-border-left) !important;
+  border-top: 2px solid var(--barra-border-top) !important;
+  border-bottom: 2px solid var(--barra-border-bottom) !important;
+}
+
+.td-barra {
+  padding: 5px;
+  color: var(--barra-text-color) !important;
+  /* background-color: white !important; */
+}
+
+.td-barra:hover {
+  color: var(--barra-text-hover-color) !important;
+  background-color: var(--barra-text-hover-background) !important;
+}
+
+a.barra-selected {
+    color: var(--barra-text-hover-color) !important;
+    background-color: var(--barra-text-hover-background) !important;
+}
+
+.td-barra-right {
+  /* float: inline-end !important; */
+  color: var(--barra-text-color) !important;
+}
+
+
+
+/* Menu lateral */
+.ocomon-theme .sidebar-wrapper {
+  background-color: var(--menu-lateral-bg) !important; 
+  /* color: var(--menu-lateral-color) !important; */
+}
+
+
+
+/* Cabeçalhos de listagems - tabelas */
+tr.header,
+input.header {
+  background-color: var(--ocomon-2);
+}
+
+
+/**
+Cards, seções e barra de navegação
+*/
+
+/* Cards na fila de chamados e no dashboard */
+/* .top-cards .card-header, .side-cards .card-header {
+  background-color: var(--ocomon-3)!important;
+} */
+
+/* Seções acordeon nas filas de chamados */
+/* .accordion .card-header {
+  background-color: var(--ocomon-3)!important;
+} */
+
+/* Texto nos acordeons na tela de detalhes dos ativos */
+/* .accordion .card-header h6, .accordion .card-header h4{
+  color: white !important;
+} */
+
+/* Barra de navegação na tela de detalhes de chamados e ativos */
+/* .navbar, .navbar-nav {
+  background-color: var(--ocomon-3)!important;
+}
+.navbar-nav>.nav-link:hover {
+  background-color: var(--ocomon-3-dark) !important;
+} */
+
+
+/**
+Área de login
+*/
+
+/* Botão de login */
+/* .login100-form-btn {
+  background-color: var(--ocomon-3)!important;
+} */
+
+/* .login100-form-btn:hover {
+  background-color: var(--ocomon-3-dark)!important;
+} */
+
+/* .login100-form-social-item {
+  color: white !important;
+  background-color: var(--ocomon-3-lighter)!important;
+}
+
+.login100-form-social-item:hover {
+  color: white !important;
+  background-color: var(--ocomon-3)!important;
+} */
+
+
+/* Botão de cancelar no registro ou alteração de senha */
+/* .container-login100-form-btn .bg-secondary {
+  background-color: var(--ocomon-2)!important;
+}
+.container-login100-form-btn .bg-secondary:hover {
+  background-color: var(--ocomon-2-dark)!important;
+} */
+
+
+.alert-info {
+  border: 1px solid #0C5460 !important;
+}
+
+.alert-danger {
+  border: 1px solid #6D1A17 !important;
+}
+
+.alert-secondary {
+  border: 1px solid #253238 !important;
+}
+
+
+/* Aplicar estilos em todos os iframes menos no iframe #iframeMain */
+iframe:not(#iframeMain) {
+  border: 1px solid #48606B;
+  border-radius: .25rem;
+}
+
+
+/* Cor dos elementos da barra de formatação de textos */
+.se-tooltip {
+  /* color: #3a4d56 !important; */
+  color: var(--ocomon-2-darkest) !important;
+}
+.se-only-display  {
+  /* box-sizing: border-box; */
+  border: none;
+}
+
+
+.ocomon-color-1 {
+  color: var(--ocomon-1) !important;
+}
+.ocomon-color-2 {
+  color: var(--ocomon-2) !important;
+}
+.ocomon-color-3 {
+  color: var(--ocomon-3) !important;
+}
+.ocomon-color-4 {
+  color: var(--ocomon-4) !important;
+}
+.ocomon-color-5 {
+  color: var(--ocomon-5) !important;
+}
+
+.ocomon-color-1-light {
+  color: var(--ocomon-1-light) !important;
+}
+.ocomon-color-1-lighter {
+  color: var(--ocomon-1-lighter) !important;
+}
+.ocomon-color-1-lightest {
+  color: var(--ocomon-1-lightest) !important;
+}
+.ocomon-color-1-dark {
+  color: var(--ocomon-1-dark) !important;
+}
+.ocomon-color-1-darker {
+  color: var(--ocomon-1-darker) !important;
+}
+.ocomon-color-1-darkest {
+  color: var(--ocomon-1-darkest) !important;
+}
+
+.ocomon-color-2-light {
+  color: var(--ocomon-2-light) !important;
+}
+.ocomon-color-2-lighter {
+  color: var(--ocomon-2-lighter) !important;
+}
+.ocomon-color-2-lightest {
+  color: var(--ocomon-2-lightest) !important;
+}
+.ocomon-color-2-dark {
+  color: var(--ocomon-2-dark) !important;
+}
+.ocomon-color-2-darker {
+  color: var(--ocomon-2-darker) !important;
+}
+.ocomon-color-2-darkest {
+  color: var(--ocomon-2-darkest) !important;
+}
+
+.ocomon-color-3-light {
+  color: var(--ocomon-3-light) !important;
+}
+.ocomon-color-3-lighter {
+  color: var(--ocomon-3-lighter) !important;
+}
+.ocomon-color-3-lightest {
+  color: var(--ocomon-3-lightest) !important;
+}
+.ocomon-color-3-dark {
+  color: var(--ocomon-3-dark) !important;
+}
+.ocomon-color-3-darker {
+  color: var(--ocomon-3-darker) !important;
+}
+.ocomon-color-3-darkest {
+  color: var(--ocomon-3-darkest) !important;
+}
+
+.ocomon-color-4-light {
+  color: var(--ocomon-4-light) !important;
+}
+.ocomon-color-4-lighter {
+  color: var(--ocomon-4-lighter) !important;
+}
+.ocomon-color-4-lightest {
+  color: var(--ocomon-4-lightest) !important;
+}
+.ocomon-color-4-dark {
+  color: var(--ocomon-4-dark) !important;
+}
+.ocomon-color-4-darker {
+  color: var(--ocomon-4-darker) !important;
+}
+.ocomon-color-4-darkest {
+  color: var(--ocomon-4-darkest) !important;
+}
+
+.ocomon-color-5-light {
+  color: var(--ocomon-5-light) !important;
+}
+.ocomon-color-5-lighter {
+  color: var(--ocomon-5-lighter) !important;
+}
+.ocomon-color-5-lightest {
+  color: var(--ocomon-5-lightest) !important;
+}
+.ocomon-color-5-dark {
+  color: var(--ocomon-5-dark) !important;
+}
+.ocomon-color-5-darker {
+  color: var(--ocomon-5-darker) !important;
+}
+.ocomon-color-5-darkest {
+  color: var(--ocomon-5-darkest) !important;
+}
+
+
+.ocomon-color-1-bg {
+  background-color: var(--ocomon-1) !important;
+}
+.ocomon-color-2-bg {
+  background-color: var(--ocomon-2) !important;
+}
+.ocomon-color-3-bg {
+  background-color: var(--ocomon-3) !important;
+}
+.ocomon-color-4-bg {
+  background-color: var(--ocomon-4) !important;
+}
+.ocomon-color-5-bg {
+  background-color: var(--ocomon-5) !important;
+}
+
+.ocomon-color-1-light-bg {
+  background-color: var(--ocomon-1-light) !important;
+}
+.ocomon-color-1-lighter-bg {
+  background-color: var(--ocomon-1-lighter) !important;
+}
+.ocomon-color-1-lightest-bg {
+  background-color: var(--ocomon-1-lightest) !important;
+}
+.ocomon-color-1-dark-bg {
+  background-color: var(--ocomon-1-dark) !important;
+}
+.ocomon-color-1-darker-bg {
+  background-color: var(--ocomon-1-darker) !important;
+}
+.ocomon-color-1-darkest-bg {
+  background-color: var(--ocomon-1-darkest) !important;
+}
+
+.ocomon-color-2-light-bg {
+  background-color: var(--ocomon-2-light) !important;
+}
+.ocomon-color-2-lighter-bg {
+  background-color: var(--ocomon-2-lighter) !important;
+}
+.ocomon-color-2-lightest-bg {
+  background-color: var(--ocomon-2-lightest) !important;
+}
+.ocomon-color-2-dark-bg {
+  background-color: var(--ocomon-2-dark) !important;
+}
+.ocomon-color-2-darker-bg {
+  background-color: var(--ocomon-2-darker) !important;
+}
+.ocomon-color-2-darkest-bg {
+  background-color: var(--ocomon-2-darkest) !important;
+}
+
+.ocomon-color-3-light-bg {
+  background-color: var(--ocomon-3-light) !important;
+}
+.ocomon-color-3-lighter-bg {
+  background-color: var(--ocomon-3-lighter) !important;
+}
+.ocomon-color-3-lightest-bg {
+  background-color: var(--ocomon-3-lightest) !important;
+}
+.ocomon-color-3-dark-bg {
+  background-color: var(--ocomon-3-dark) !important;
+}
+.ocomon-color-3-darker-bg {
+  background-color: var(--ocomon-3-darker) !important;
+}
+.ocomon-color-3-darkest-bg {
+  background-color: var(--ocomon-3-darkest) !important;
+}
+
+.ocomon-color-4-light-bg {
+  background-color: var(--ocomon-4-light) !important;
+}
+.ocomon-color-4-lighter-bg {
+  background-color: var(--ocomon-4-lighter) !important;
+}
+.ocomon-color-4-lightest-bg {
+  background-color: var(--ocomon-4-lightest) !important;
+}
+.ocomon-color-4-dark-bg {
+  background-color: var(--ocomon-4-dark) !important;
+}
+.ocomon-color-4-darker-bg {
+  background-color: var(--ocomon-4-darker) !important;
+}
+.ocomon-color-4-darkest-bg {
+  background-color: var(--ocomon-4-darkest) !important;
+}
+
+.ocomon-color-5-light-bg {
+  background-color: var(--ocomon-5-light) !important;
+}
+.ocomon-color-5-lighter-bg {
+  background-color: var(--ocomon-5-lighter) !important;
+}
+.ocomon-color-5-lightest-bg {
+  background-color: var(--ocomon-5-lightest) !important;
+}
+.ocomon-color-5-dark-bg {
+  background-color: var(--ocomon-5-dark) !important;
+}
+.ocomon-color-5-darker-bg {
+  background-color: var(--ocomon-5-darker) !important;
+}
+.ocomon-color-5-darkest-bg {
+  background-color: var(--ocomon-5-darkest) !important;
+}

@@ -1,0 +1,32 @@
+{
+    "name": "flaviorib-dev/ocomon_api",
+    "description": "OcoMon api",
+    "type": "library",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "flaviorib-dev",
+            "email": "flaviorib@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpmailer/phpmailer": "^6.9.1",
+        "coffeecode/router": "2.0.*",
+        "coffeecode/datalayer": "2.0.*",
+        "coffeecode/paginator": "2.0.*",
+        "firebase/php-jwt": "^5.2",
+        "greew/oauth2-azure-provider": "dev-main"
+    },
+    "config": {
+        "vendor-dir":"vendor",
+        "platform": {
+            "php":"8.0"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "OcomonApi\\": "app"
+        }
+    }
+}

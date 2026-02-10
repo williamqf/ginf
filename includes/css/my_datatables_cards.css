@@ -1,0 +1,79 @@
+
+.cards thead {
+    display: none;
+}
+
+.cards tbody tr {
+    float: left;
+    /* width: calc(50vw - 2rem); */
+    width: calc(100vw - 2rem);
+    margin: 0.5rem;
+    border: 0.0625rem solid rgba(0, 0, 0, .125);
+    /* border-radius: .25rem; */
+    /* box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25); */
+}
+
+.cards td {
+    display: inline-block;
+    margin: 0 0.5rem 0.5rem 0;
+    padding: 0.5rem;
+    text-align: left;
+    background-color: white;
+    /* border: 1px solid transparentize( #58C25F, 0.5 ); */
+}
+
+.cards td:before {
+    content: attr(data-label);
+    position: relative;
+    float: left;
+    color: #808080;
+    min-width: 4rem;
+    margin-left: 0;
+    margin-right: 1rem;
+    text-align: left;
+
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+.cards td:first-child {
+    display: block;
+    float: none;
+    
+    font-size: 1.1em;
+    font-weight: bold;
+
+    &:before {
+        display: block;
+        margin-right: -0.5rem;
+        margin-bottom: 0.5rem;
+        float: none;
+    }
+}
+
+.cards td:last-child {
+    display: block;
+    float: none;
+    
+    font-size: 1.1em;
+
+    &:before {
+        display: block;
+        margin-right: -0.5rem;
+        margin-bottom: 0.5rem;
+        float: none;
+    }
+}
+
+.cards td:empty {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .cards tbody tr {
+        width: 100%;
+        /* float: none; */
+        margin: 0.5rem 0 0.5rem 0;
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "require": {
+        "andreoneres/brasilapi-php": "^1.2"
+    }
+}

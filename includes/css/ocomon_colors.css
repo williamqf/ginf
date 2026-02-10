@@ -1,0 +1,42 @@
+:root {
+  --ocomon-1: #2B414B;
+  --ocomon-2: #3A4D56;
+  --ocomon-3: #008080;
+  --ocomon-4: #628C97;
+  --ocomon-5: #D7E1DC;
+
+  --ocomon-1-light: color-mix(in srgb, var(--ocomon-1), white 10%);
+  --ocomon-1-lighter: color-mix(in srgb, var(--ocomon-1), white 20%);
+  --ocomon-1-lightest: color-mix(in srgb, var(--ocomon-1), white 40%);
+  --ocomon-1-dark: color-mix(in srgb, var(--ocomon-1), black 10%);
+  --ocomon-1-darker: color-mix(in srgb, var(--ocomon-1), black 20%);
+  --ocomon-1-darkest: color-mix(in srgb, var(--ocomon-1), black 40%);
+
+  --ocomon-2-light: color-mix(in srgb, var(--ocomon-2), white 10%);
+  --ocomon-2-lighter: color-mix(in srgb, var(--ocomon-2), white 40%);
+  --ocomon-2-lightest: color-mix(in srgb, var(--ocomon-2), white 40%);
+  --ocomon-2-dark: color-mix(in srgb, var(--ocomon-2), black 10%);
+  --ocomon-2-darker: color-mix(in srgb, var(--ocomon-2), black 20%);
+  --ocomon-2-darkest: color-mix(in srgb, var(--ocomon-2), black 40%);
+
+  --ocomon-3-light: color-mix(in srgb, var(--ocomon-3), white 10%);
+  --ocomon-3-lighter: color-mix(in srgb, var(--ocomon-3), white 40%);
+  --ocomon-3-lightest: color-mix(in srgb, var(--ocomon-3), white 40%);
+  --ocomon-3-dark: color-mix(in srgb, var(--ocomon-3), black 10%);
+  --ocomon-3-darker: color-mix(in srgb, var(--ocomon-3), black 20%);
+  --ocomon-3-darkest: color-mix(in srgb, var(--ocomon-3), black 40%);
+
+  --ocomon-4-light: color-mix(in srgb, var(--ocomon-4), white 10%);
+  --ocomon-4-lighter: color-mix(in srgb, var(--ocomon-4), white 20%);
+  --ocomon-4-lightest: color-mix(in srgb, var(--ocomon-4), white 40%);
+  --ocomon-4-dark: color-mix(in srgb, var(--ocomon-4), black 10%);
+  --ocomon-4-darker: color-mix(in srgb, var(--ocomon-4), black 20%);
+  --ocomon-4-darkest: color-mix(in srgb, var(--ocomon-4), black 40%);
+
+  --ocomon-5-light: color-mix(in srgb, var(--ocomon-5), white 10%);
+  --ocomon-5-lighter: color-mix(in srgb, var(--ocomon-5), white 40%);
+  --ocomon-5-lightest: color-mix(in srgb, var(--ocomon-5), white 40%);
+  --ocomon-5-dark: color-mix(in srgb, var(--ocomon-5), black 10%);
+  --ocomon-5-darker: color-mix(in srgb, var(--ocomon-5), black 20%);
+  --ocomon-5-darkest: color-mix(in srgb, var(--ocomon-5), black 40%);
+}
